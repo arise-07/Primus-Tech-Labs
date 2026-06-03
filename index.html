@@ -1,0 +1,800 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Primus Tech Labs builds modern, responsive, SEO-friendly websites for businesses, startups, and creators.">
+    <meta name="keywords"
+        content="Website Development, Web Design Services, Business Website Development, Portfolio Website Design, Landing Page Development, Responsive Web Design, SEO Friendly Websites, Primus Tech Labs">
+    <meta name="author" content="Primus Tech Labs">
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Primus Tech Labs | Professional Website Development Agency">
+    <meta property="og:description"
+        content="Primus Tech Labs creates modern websites, landing pages, and digital solutions that help businesses grow online.">
+    <meta property="og:image" content="https://via.placeholder.com/1200x630/050505/7CFF00?text=Primus+Tech+Labs">
+    <meta property="og:url" content="https://primustechlabs.com">
+    <meta property="og:type" content="website">
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Primus Tech Labs | Professional Website Development Agency">
+    <meta name="twitter:description"
+        content="Primus Tech Labs creates modern websites, landing pages, and digital solutions that help businesses grow online.">
+    <meta name="twitter:image" content="https://via.placeholder.com/1200x630/050505/7CFF00?text=Primus+Tech+Labs">
+
+    <!-- JSON-LD Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Primus Tech Labs",
+        "url": "https://primustechlabs.com",
+        "logo": "https://via.placeholder.com/200x200/050505/7CFF00?text=Primus",
+        "description": "Professional website development agency specializing in modern, responsive web design.",
+        "sameAs": [
+            "https://instagram.com/primustechlabs",
+            "https://twitter.com/primustechlabs",
+            "https://linkedin.com/company/primustechlabs"
+        ]
+    }
+    </script>
+
+    <title>Primus Tech Labs | Professional Website Development Agency</title>
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Inter:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container navbar-content">
+            <div class="navbar-brand">
+                <img src="image copy.png" alt="Primus Logo" class="logo" style="width: 150px; height: 100px;">
+
+            </div>
+
+            <button class="hamburger" id="hamburgerMenu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home" class="scroll-link">Home</a></li>
+                <li><a href="#services" class="scroll-link">Services</a></li>
+                <li><a href="#portfolio" class="scroll-link">Portfolio</a></li>
+                <li><a href="#about" class="scroll-link">About</a></li>
+                <li><a href="#contact" class="scroll-link">Contact</a></li>
+
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <canvas id="particleCanvas" class="particle-bg"></canvas>
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">Building Powerful Digital Experiences</h1>
+                <p class="hero-subtitle">Primus Tech Labs creates modern websites, landing pages, and digital solutions
+                    that help businesses grow online.</p>
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn btn-primary scroll-link"><i class="fas fa-rocket"></i> Start Your
+                        Project</a>
+                    <a href="https://wa.me/917639416446" target="_blank" class="btn btn-secondary"><i
+                            class="fab fa-whatsapp"></i> Chat on WhatsApp</a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="floating-shapes">
+                    <div class="shape shape-1"></div>
+                    <div class="shape shape-2"></div>
+                    <div class="shape shape-3"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section id="stats" class="stats">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-number" data-target="5">0</div>
+                    <p class="stat-label">Projects Delivered</p>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number" data-target="99">0</div>
+                    <p class="stat-label">Client Satisfaction %</p>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number" data-target="24">0</div>
+                    <p class="stat-label">Hour Support</p>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number" data-target="95">0</div>
+                    <p class="stat-label">Performance Score</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2 class="section-title">Our Services</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-globe"></i></div>
+                    <h3>Business Websites</h3>
+                    <p>Professional and scalable websites tailored for your business needs and brand identity.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-palette"></i></div>
+                    <h3>Portfolio Websites</h3>
+                    <p>Stunning portfolio sites that showcase your work and talents to the world.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-bullseye"></i></div>
+                    <h3>Landing Pages</h3>
+                    <p>High-converting landing pages designed to maximize your marketing campaigns.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-suitcase"></i></div>
+                    <h3>Promotional Websites</h3>
+                    <p>Eye-catching promotional sites that drive engagement and boost your brand visibility.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-file"></i></div>
+                    <h3>Static Websites</h3>
+                    <p>Fast, SEO-friendly static websites that are easy to maintain and deploy.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-bolt"></i></div>
+                    <h3>Dynamic Websites</h3>
+                    <p>Interactive and feature-rich dynamic websites powered by modern technologies.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-sync"></i></div>
+                    <h3>Website Redesign</h3>
+                    <p>Revitalize your existing website with modern design and improved functionality.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-wrench"></i></div>
+                    <h3>Website Maintenance</h3>
+                    <p>Ongoing support and maintenance to keep your website running smoothly.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section class="why-choose">
+        <div class="container">
+            <h2 class="section-title">Why Choose Us</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fas fa-mobile-alt"></i></div>
+                    <h3>Mobile Responsive</h3>
+                    <p>Every website is optimized for all devices and screen sizes.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fas fa-search"></i></div>
+                    <h3>SEO Optimized</h3>
+                    <p>Built with best practices to ensure high search engine rankings.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fas fa-tachometer-alt"></i></div>
+                    <h3>Fast Loading</h3>
+                    <p>Optimized performance for lightning-fast page loads and user experience.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fas fa-star"></i></div>
+                    <h3>Modern UI/UX</h3>
+                    <p>Contemporary design with intuitive user interfaces and smooth interactions.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fas fa-shield-alt"></i></div>
+                    <h3>Secure Development</h3>
+                    <p>Industry-standard security practices to protect your data and users.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fas fa-headset"></i></div>
+                    <h3>Dedicated Support</h3>
+                    <p>Responsive support team ready to assist you whenever you need.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section class="process">
+        <div class="container">
+            <h2 class="section-title">Our Process</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>Discovery</h3>
+                        <p>We understand your vision, goals, and target audience.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>Planning</h3>
+                        <p>Strategic planning and wireframing for optimal user experience.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>Design</h3>
+                        <p>Creating stunning visual designs that align with your brand.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>Development</h3>
+                        <p>Building robust, scalable code using modern technologies.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>Testing</h3>
+                        <p>Comprehensive testing to ensure quality and functionality.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>Launch</h3>
+                        <p>Deployment and ongoing optimization for peak performance.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="portfolio-grid">
+                <div class="portfolio-card">
+                    <div class="portfolio-image">
+                        <img src="image copy 5.png" alt="Project 1">
+                        <div class="portfolio-overlay">
+                            <a href="https://bhairavi-academy.netlify.app/" class="btn btn-primary small">View
+                                Project</a>
+                        </div>
+                    </div>
+                    <div class="portfolio-content">
+                        <h3>Promotion Website</h3>
+                        <p>We designed a custom promotional website for Bhiravi Academy, a NEET coaching institute,
+                            focused on attracting students and enhancing their online presence.</p>
+                        <div class="tech-tags">
+                            <span class="tech-tag">HTML5</span>
+                            <span class="tech-tag">CSS3</span>
+                            <span class="tech-tag">JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-card">
+                    <div class="portfolio-image">
+                        <img src="image copy 6.png" alt="Project 2">
+                        <div class="portfolio-overlay">
+                            <a href="https://join-bhairavi.netlify.app/" class="btn btn-primary small">View Project</a>
+                        </div>
+                    </div>
+                    <div class="portfolio-content">
+                        <h3>Registration System</h3>
+                        <p>We built a database-driven registration system for Bhairavi Academy to securely store and
+                            manage student enrollment details.</p>
+                        <div class="tech-tags">
+                            <span class="tech-tag">HTML5</span>
+                            <span class="tech-tag">CSS3</span>
+                            <span class="tech-tag">Firebase</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-card">
+                    <div class="portfolio-image">
+                        <img src="image copy 7.png" alt="Project 3">
+                        <div class="portfolio-overlay">
+                            <a href="https://myportfolio-iota-two-77.vercel.app/" class="btn btn-primary small">View
+                                Project</a>
+                        </div>
+                    </div>
+                    <div class="portfolio-content">
+                        <h3>Portfolio Website</h3>
+                        <p>We designed a responsive portfolio website to showcase skills, projects, and achievements in
+                            a clean and professional way.”</p>
+                        <div class="tech-tags">
+                            <span class="tech-tag">HTML5</span>
+                            <span class="tech-tag">CSS3</span>
+                            <span class="tech-tag">JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technologies Section -->
+    <section class="technologies">
+        <div class="container">
+            <h2 class="section-title">Technologies We Use</h2>
+            <div class="tech-grid">
+                <div class="tech-card">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5"
+                        class="tech-logo-img">
+                    <h3 style="color: var(--primary-green);">HTML5</h3>
+                    <p>Semantic markup for structured content</p>
+                </div>
+                <div class="tech-card">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3"
+                        class="tech-logo-img">
+                    <h3 style="color: var(--primary-green);">CSS3</h3>
+                    <p>Advanced styling and animations</p>
+                </div>
+                <div class="tech-card">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+                        alt="JavaScript" class="tech-logo-img">
+                    <h3 style="color: var(--primary-green);">JavaScript</h3>
+                    <p>Vanilla JavaScript for interactivity</p>
+                </div>
+                <div class="tech-card">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg"
+                        alt="TypeScript" class="tech-logo-img">
+                    <h3 style="color: var(--primary-green);">TypeScript</h3>
+                    <p>TypeScript for type-safe development</p>
+                </div>
+                <div class="tech-card">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React"
+                        class="tech-logo-img">
+                    <h3 style="color: var(--primary-green);">React</h3>
+                    <p>Component-based UI libraries</p>
+                </div>
+                <div class="tech-card">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg"
+                        alt="Next.js" class="tech-logo-img">
+                    <h3 style="color: var(--primary-green);">Next.js</h3>
+                    <p>Full-stack React framework</p>
+                </div>
+                <div class="tech-card">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg"
+                        alt="Tailwind" class="tech-logo-img">
+                    <h3 style="color: var(--primary-green);">Tailwind CSS</h3>
+                    <p>Utility-first CSS framework</p>
+                </div>
+                <div class="tech-card">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
+                        alt="Node.js" class="tech-logo-img">
+                    <h3 style="color: var(--primary-green);">Node.js</h3>
+                    <p>Backend JavaScript runtime</p>
+                </div>
+                <div class="tech-card">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg"
+                        alt="Firebase" class="tech-logo-img">
+                    <h3 style="color: var(--primary-green);">Firebase</h3>
+                    <p>Backend-as-a-service platform</p>
+                </div>
+                <div class="tech-card">
+                    <img src="image copy 4.png" alt="GitHub" class="tech-logo-img">
+                    <h3 style="color: var(--primary-green);">GitHub</h3>
+                    <p>Version control and collaboration</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="container">
+            <h2 class="section-title">What Clients Say</h2>
+            <div class="testimonials-carousel">
+                <button class="carousel-btn prev" id="prevTestimonial">❮</button>
+
+                <div class="testimonial-container">
+                    <div class="testimonial-card active">
+                        <div class="testimonial-avatar">
+                            <img src="image.png" alt="Client 1">
+                        </div>
+                        <p class="testimonial-text">I’m really happy to share my experience with this talented digital
+                            content creator. He created my academy’s website in a very professional and attractive way. Now our academy looks more
+                            professional and well-organized online. His research, ideas,were
+                            excellent throughout the process.Keep shining and growing with intelligence and creativity.
+                            </p>
+                        <h4 class="testimonial-author">Ms. Parvathy</h4>
+                        <p class="testimonial-role">Owner, Bhairavi Academy</p>
+                    </div>
+
+                    <div class="testimonial-card">
+                        <div class="testimonial-avatar">
+                            <img src="image.png" alt="Client 2">
+                        </div>
+                        <p class="testimonial-text">Honestly, Primus Tech did an amazing job on my portfolio website. The
+                            design is super clean and modern, and it actually represents my work exactly how I wanted it
+                            to. He was really patient with all my requests and brought a lot of great ideas to the table
+                            that made the final result way better than I expected.If you need a solid website, he’s definitely the guy. Massive thanks, man!</p>
+                        <h4 class="testimonial-author">Shane Hicks</h4>
+                        <p class="testimonial-role">Student</p>
+                    </div>
+
+
+                </div>
+
+                <button class="carousel-btn next" id="nextTestimonial">❯</button>
+            </div>
+
+            <div class="carousel-dots">
+                <span class="dot active" data-index="0"></span>
+                <span class="dot" data-index="1"></span>
+                <span class="dot" data-index="2"></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="pricing">
+        <div class="container">
+            <h2 class="section-title">Pricing Plans</h2>
+            <div class="pricing-grid">
+                <div class="pricing-card">
+                    <h3>Starter</h3>
+                    <div class="price">₹5,000</div>
+                    <p class="price-period">One-time payment</p>
+                    <ul class="features-list">
+                        <li>✓ Up to 5 pages</li>
+                        <li>✓ Responsive design</li>
+                        <li>✓ Basic SEO</li>
+                        <li>✓ Contact form</li>
+                        <li>✓ 1 month support</li>
+                    </ul>
+                    <a href="#contact" class="btn btn-primary-outline scroll-link">Get Started</a>
+                </div>
+
+                <div class="pricing-card featured">
+                    <div class="badge">Most Popular</div>
+                    <h3>Business</h3>
+                    <div class="price">₹12,000</div>
+                    <p class="price-period">One-time payment</p>
+                    <ul class="features-list">
+                        <li>✓ Up to 10 pages</li>
+                        <li>✓ Professional UI design</li>
+                        <li>✓ Advanced SEO</li>
+                        <li>✓ Speed optimization</li>
+                        <li>✓ Analytics setup</li>
+                        <li>✓ 3 months support</li>
+
+                    </ul>
+                    <a href="#contact" class="btn btn-primary scroll-link">Get Started</a>
+                </div>
+
+                <div class="pricing-card">
+                    <h3>Premium</h3>
+                    <div class="price">₹25,000</div>
+                    <p class="price-period">One-time payment</p>
+                    <ul class="features-list">
+                        <li>✓ Unlimited pages</li>
+                        <li>✓ Fully custom design</li>
+                        <li>✓ Advanced features</li>
+                        <li>✓ Admin panel</li>
+                        <li>✓ API integration</li>
+                        <li>✓ 6 months support</li>
+
+                    </ul>
+                    <a href="#contact" class="btn btn-primary-outline scroll-link">Get Started</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="about" class="faq">
+        <div class="container">
+            <h2 class="section-title">Frequently Asked Questions</h2>
+            <div class="faq-container">
+                <div class="faq-item">
+                    <button class="faq-question">
+                        What types of websites do you build?
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>We build a wide variety of websites including business websites, portfolio sites, landing
+                            pages, e-commerce platforms, and custom web applications using modern technologies.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        How long does website development take?
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Project timelines vary based on complexity and scope. A typical business website takes 1-2
+                            weeks, while more complex projects may take longer. We'll provide a detailed timeline during
+                            the discovery phase.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        Are your websites mobile-friendly?
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Absolutely! All our websites are fully responsive and optimized for mobile, tablet, and
+                            desktop devices. Mobile-first design is a core principle in our development process.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        Do you provide SEO optimization?
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes! All our websites are built with SEO best practices in mind, including proper meta tags,
+                            semantic HTML, fast loading speeds, and mobile optimization to help you rank higher on
+                            search engines.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        Can you redesign existing websites?
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Absolutely! We specialize in website redesigns that modernize your existing site, improve
+                            user experience, update the design, and enhance functionality while preserving your existing
+                            content when needed.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        Do you offer maintenance services?
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes, we offer comprehensive maintenance packages that include updates, security patches,
+                            performance monitoring, and ongoing support to keep your website running smoothly.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        Will I own my website after completion?
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes! You'll have complete ownership of your website. We provide all source code, and you'll
+                            have full control over your domain, hosting, and website assets.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        How much does a website cost?
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Pricing depends on your project's complexity and requirements. We offer flexible pricing
+                            starting within ₹5000 for starter packages. Contact us for a custom quote tailored to your
+                            needs.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        Can you help with domain and hosting?
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes! We can help you register a domain, set up hosting, and configure everything needed for
+                            your website. We work with reliable providers to ensure optimal performance.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        How can I contact Primus Tech Labs?
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>You can reach us through the contact form on this website, via email, WhatsApp, or phone. We
+                            typically respond within 24 hours. Fill out the contact form below to get started!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-card">
+                <h2>Ready To Build Something Exceptional?</h2>
+                <p>Transform your vision into a high-performance website with Primus Tech Labs.</p>
+                <div class="cta-buttons">
+                    <a href="#contact" class="btn btn-primary scroll-link"><i class="fas fa-rocket"></i> Start
+                        Project</a>
+                    <a href="https://wa.me/917639416446" target="_blank" class="btn btn-secondary"><i
+                            class="fab fa-whatsapp"></i> WhatsApp Us</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Contact Us</h2>
+            <p class="section-subtitle">Have a project in mind? We'd love to hear from you.</p>
+
+            <div class="contact-layout">
+                <div class="contact-info">
+                    <div class="info-card">
+                        <div class="info-icon"><i class="fas fa-phone"></i></div>
+                        <h4>Phone</h4>
+                        <p><a href="tel:+918807349337">+91 8807349337</a></p>
+                        <p style="margin-top: 20px;">Call anytime, our team is ready to help</p>
+                    </div>
+
+                    <div class="info-card">
+                        <div class="info-icon"><i class="fas fa-envelope"></i></div>
+                        <h4>Email</h4>
+                        <p><a href="mailto:info@primustechlabs.in">info@primustechlabs.in</a></p>
+                        <p style="margin-top: 20px;">Send us an email and we'll get back to you soon</p>
+                    </div>
+
+                    <div class="info-card">
+                        <div class="info-icon"><i class="fab fa-instagram"></i></div>
+                        <h4>Instagram</h4>
+                        <p><a href="https://instagram.com/primustechlabs" target="_blank">@primustechlabs</a></p>
+                        <p style="margin-top: 20px;">Follow us for updates, tips, and behind-the-scenes content</p>
+                    </div>
+
+                    <div class="info-card">
+                        <div class="info-icon"><i class="fab fa-whatsapp"></i></div>
+                        <h4>WhatsApp</h4>
+                        <p><a href="https://wa.me/917639416446" target="_blank">Message us</a></p>
+                        <p style="margin-top: 20px;">Chat with us anytime for quick assistance</p>
+                    </div>
+                </div>
+
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <input type="text" id="fullName" placeholder="Full Name" required>
+                        <span class="error-message" id="nameError"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <input type="email" id="email" placeholder="Your Email" required>
+                        <span class="error-message" id="emailError"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <input type="tel" id="phone" placeholder="Phone Number" required>
+                        <span class="error-message" id="phoneError"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <select id="projectType" required>
+                            <option value="">Select Project Type</option>
+                            <option value="business">Business Website</option>
+                            <option value="portfolio">Portfolio Website</option>
+                            <option value="landing">Landing Page</option>
+                            <option value="ecommerce">E-commerce</option>
+                            <option value="redesign">Website Redesign</option>
+                            <option value="other">Other</option>
+                        </select>
+                        <span class="error-message" id="projectError"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <select id="budget" required>
+                            <option value="">Select Budget Range</option>
+                            <option value="under-1k">Under ₹5000</option>
+                            <option value="1k-3k">₹5000 - ₹7000</option>
+                            <option value="3k-5k">₹7000 - ₹10000</option>
+                            <option value="5k-10k">₹10000 - ₹15000</option>
+                            <option value="above-10k">Above ₹15000</option>
+                        </select>
+                        <span class="error-message" id="budgetError"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <textarea id="message" placeholder="Tell us about your project..." rows="5" required></textarea>
+                        <span class="error-message" id="messageError"></span>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">Send Inquiry</button>
+                    <span class="success-message" id="successMessage"></span>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- WhatsApp Floating Button -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <a href="https://wa.me/917639416446" class="whatsapp-button">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home" class="scroll-link">Home</a></li>
+                        <li><a href="#services" class="scroll-link">Services</a></li>
+                        <li><a href="#portfolio" class="scroll-link">Portfolio</a></li>
+                        <li><a href="#about" class="scroll-link">About</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#">Business Websites</a></li>
+                        <li><a href="#">Portfolio Websites</a></li>
+                        <li><a href="#">Landing Pages</a></li>
+                        <li><a href="#">Website Redesign</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <ul>
+                        <li><a href="https://instagram.com/primustechlabs" target="_blank"><i
+                                    class="fab fa-instagram"></i> Instagram</a></li>
+                        <li><a href="https://twitter.com/primustechlabs" target="_blank"><i class="fab fa-twitter"></i>
+                                Twitter</a></li>
+                        <li><a href="https://linkedin.com/company/primustechlabs" target="_blank"><i
+                                    class="fab fa-linkedin"></i> LinkedIn</a></li>
+                        <li><a href="https://github.com/primustechlabs" target="_blank"><i class="fab fa-github"></i>
+                                GitHub</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 Primus Tech Labs. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
