@@ -60,7 +60,7 @@
     <nav class="navbar">
         <div class="container navbar-content">
             <div class="navbar-brand">
-                <img src="image copy.png" alt="Primus Logo" class="logo" style="width: 150px; height: 100px;">
+                <img src="images/logo.png" alt="Primus Tech Labs logo" class="logo">
 
             </div>
 
@@ -72,9 +72,10 @@
 
             <ul class="nav-links" id="navLinks">
                 <li><a href="#home" class="scroll-link">Home</a></li>
+                <li><a href="#about" class="scroll-link">About</a></li>
                 <li><a href="#services" class="scroll-link">Services</a></li>
                 <li><a href="#portfolio" class="scroll-link">Portfolio</a></li>
-                <li><a href="#about" class="scroll-link">About</a></li>
+                <li><a href="#faq" class="scroll-link">FAQ</a></li>
                 <li><a href="#contact" class="scroll-link">Contact</a></li>
 
             </ul>
@@ -83,48 +84,137 @@
 
     <!-- Hero Section -->
     <section id="home" class="hero">
-        <canvas id="particleCanvas" class="particle-bg"></canvas>
-        <div class="hero-content">
+        <canvas id="particleCanvas" class="particle-bg" aria-hidden="true"></canvas>
+        <div class="hero-glow hero-glow-left" aria-hidden="true"></div>
+        <div class="hero-glow hero-glow-right" aria-hidden="true"></div>
+
+        <div class="container hero-content">
             <div class="hero-text">
-                <h1 class="hero-title">Building Powerful Digital Experiences</h1>
-                <p class="hero-subtitle">Primus Tech Labs creates modern websites, landing pages, and digital solutions
-                    that help businesses grow online.</p>
+                <span class="hero-eyebrow"><span class="eyebrow-dot" aria-hidden="true"></span> Web Development
+                    Studio</span>
+                <h1 class="hero-title">Building Powerful <span class="title-accent">Digital Experiences</span></h1>
+                <p class="hero-subtitle">Primus Tech Labs designs and builds modern websites, landing pages, and
+                    digital solutions that help businesses grow online.</p>
                 <div class="hero-buttons">
-                    <a href="#contact" class="btn btn-primary scroll-link"><i class="fas fa-rocket"></i> Start Your
-                        Project</a>
-                    <a href="https://wa.me/917639416446" target="_blank" class="btn btn-secondary"><i
-                            class="fab fa-whatsapp"></i> Chat on WhatsApp</a>
+                    <a href="#contact" class="btn btn-primary btn-hero scroll-link"
+                        aria-label="Start your project — go to contact form"><i class="fas fa-rocket"
+                            aria-hidden="true"></i> Start Your Project</a>
+                    <a href="https://wa.me/917639416446" target="_blank" rel="noopener"
+                        class="btn btn-secondary btn-hero-secondary" aria-label="Chat with us on WhatsApp"><i
+                            class="fab fa-whatsapp" aria-hidden="true"></i> Chat on
+                        WhatsApp</a>
                 </div>
+                <ul class="hero-trust" aria-label="Why clients choose Primus Tech Labs">
+                    <li><i class="fas fa-check" aria-hidden="true"></i> 5+ Projects Delivered</li>
+                    <li><i class="fas fa-check" aria-hidden="true"></i> SEO Optimized</li>
+                    <li><i class="fas fa-check" aria-hidden="true"></i> Fully Responsive</li>
+                    <li><i class="fas fa-check" aria-hidden="true"></i> Fast Delivery</li>
+                </ul>
             </div>
-            <div class="hero-visual">
-                <div class="floating-shapes">
-                    <div class="shape shape-1"></div>
-                    <div class="shape shape-2"></div>
-                    <div class="shape shape-3"></div>
+
+            <div class="hero-visual" aria-hidden="true">
+                <div class="mockup-glow"></div>
+
+                <!-- Browser window mockup -->
+                <div class="browser-mockup">
+                    <div class="browser-bar">
+                        <span class="browser-dot dot-red"></span>
+                        <span class="browser-dot dot-yellow"></span>
+                        <span class="browser-dot dot-green"></span>
+                        <span class="browser-url"><i class="fas fa-lock"></i> yourbusiness.com</span>
+                    </div>
+                    <div class="browser-body">
+                        <div class="mock-nav">
+                            <span class="mock-logo"></span>
+                            <span class="mock-links"><i></i><i></i><i></i></span>
+                        </div>
+                        <div class="mock-hero">
+                            <span class="mock-line mock-line-lg"></span>
+                            <span class="mock-line mock-line-md"></span>
+                            <span class="mock-btn"></span>
+                        </div>
+                        <div class="mock-cards">
+                            <span class="mock-card"></span>
+                            <span class="mock-card"></span>
+                            <span class="mock-card"></span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Floating phone mockup -->
+                <div class="phone-mockup">
+                    <div class="phone-notch"></div>
+                    <div class="phone-screen">
+                        <span class="mock-line mock-line-md"></span>
+                        <span class="mock-line mock-line-sm"></span>
+                        <span class="mock-img"></span>
+                        <span class="mock-btn mock-btn-sm"></span>
+                    </div>
+                </div>
+
+                <!-- Floating metric card -->
+                <div class="metric-card">
+                    <i class="fas fa-gauge-high"></i>
+                    <div class="metric-text">
+                        <strong>95+</strong>
+                        <span>Performance Score</span>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Stats Section -->
-    <section id="stats" class="stats">
+    <!-- About the Founder Section -->
+    <section id="about" class="about-founder">
         <div class="container">
-            <div class="stats-grid">
-                <div class="stat-card">
-                    <div class="stat-number" data-target="5">0</div>
-                    <p class="stat-label">Projects Delivered</p>
+            <div class="section-header">
+                <span class="section-eyebrow">About Primus</span>
+                <h2 class="section-title">The Founder &amp; The Mission</h2>
+            </div>
+
+            <div class="founder-layout">
+                <div class="founder-photo-wrap">
+                    <div class="founder-photo-glow" aria-hidden="true"></div>
+                    <img src="images/founder.png" alt="Shane, Founder of Primus Tech Labs" class="founder-photo">
+                    <div class="founder-badge"><i class="fas fa-code" aria-hidden="true"></i> Founder &amp; Lead
+                        Developer</div>
                 </div>
-                <div class="stat-card">
-                    <div class="stat-number" data-target="99">0</div>
-                    <p class="stat-label">Client Satisfaction %</p>
-                </div>
-                <div class="stat-card">
-                    <div class="stat-number" data-target="24">0</div>
-                    <p class="stat-label">Hour Support</p>
-                </div>
-                <div class="stat-card">
-                    <div class="stat-number" data-target="95">0</div>
-                    <p class="stat-label">Performance Score</p>
+
+                <div class="founder-text">
+                    <h3 class="founder-name">Shane Hicks</h3>
+                    <p class="founder-role">Founder &amp; Lead Developer, Primus Tech Labs</p>
+                    <p>Primus Tech Labs was founded with a simple aim: to give small businesses, institutions, and
+                        creators access to the kind of fast, modern, professionally designed websites that are usually
+                        reserved for big brands.</p>
+                    <p>Every project is built hands-on — clean code, responsive layouts, and SEO-ready structure —
+                        so your website doesn't just look premium, it performs. From coaching academies to personal
+                        portfolios, we treat every build as a product, not a template.</p>
+                    <ul class="founder-points">
+                        <li><i class="fas fa-check" aria-hidden="true"></i> Hand-coded, performance-first websites</li>
+                        <li><i class="fas fa-check" aria-hidden="true"></i> Direct communication — you work with the
+                            developer, not a middleman</li>
+                        <li><i class="fas fa-check" aria-hidden="true"></i> Honest pricing built for growing businesses
+                        </li>
+                    </ul>
+
+                    <div class="stats-grid founder-stats">
+                        <div class="stat-card">
+                            <div class="stat-number" data-target="5">0</div>
+                            <p class="stat-label">Projects Delivered</p>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-number" data-target="99">0</div>
+                            <p class="stat-label">Client Satisfaction %</p>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-number" data-target="24">0</div>
+                            <p class="stat-label">Hour Support</p>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-number" data-target="95">0</div>
+                            <p class="stat-label">Performance Score</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -133,7 +223,11 @@
     <!-- Services Section -->
     <section id="services" class="services">
         <div class="container">
-            <h2 class="section-title">Our Services</h2>
+            <div class="section-header">
+                <span class="section-eyebrow">What We Do</span>
+                <h2 class="section-title">Our Services</h2>
+                <p class="section-subtitle">Everything you need to launch and grow your online presence.</p>
+            </div>
             <div class="services-grid">
                 <div class="service-card">
                     <div class="service-icon"><i class="fas fa-globe"></i></div>
@@ -150,16 +244,7 @@
                     <h3>Landing Pages</h3>
                     <p>High-converting landing pages designed to maximize your marketing campaigns.</p>
                 </div>
-                <div class="service-card">
-                    <div class="service-icon"><i class="fas fa-suitcase"></i></div>
-                    <h3>Promotional Websites</h3>
-                    <p>Eye-catching promotional sites that drive engagement and boost your brand visibility.</p>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon"><i class="fas fa-file"></i></div>
-                    <h3>Static Websites</h3>
-                    <p>Fast, SEO-friendly static websites that are easy to maintain and deploy.</p>
-                </div>
+
                 <div class="service-card">
                     <div class="service-icon"><i class="fas fa-bolt"></i></div>
                     <h3>Dynamic Websites</h3>
@@ -182,7 +267,11 @@
     <!-- Why Choose Us Section -->
     <section class="why-choose">
         <div class="container">
-            <h2 class="section-title">Why Choose Us</h2>
+            <div class="section-header">
+                <span class="section-eyebrow">The Primus Standard</span>
+                <h2 class="section-title">Why Choose Us</h2>
+                <p class="section-subtitle">Built with the same care we'd put into our own product.</p>
+            </div>
             <div class="features-grid">
                 <div class="feature-card">
                     <div class="feature-icon"><i class="fas fa-mobile-alt"></i></div>
@@ -221,7 +310,11 @@
     <!-- Process Section -->
     <section class="process">
         <div class="container">
-            <h2 class="section-title">Our Process</h2>
+            <div class="section-header">
+                <span class="section-eyebrow">How We Work</span>
+                <h2 class="section-title">Our Process</h2>
+                <p class="section-subtitle">A clear six-step journey from idea to launch.</p>
+            </div>
             <div class="timeline">
                 <div class="timeline-item">
                     <div class="timeline-dot"></div>
@@ -269,77 +362,14 @@
         </div>
     </section>
 
-    <!-- Portfolio Section -->
-    <section id="portfolio" class="portfolio">
-        <div class="container">
-            <h2 class="section-title">Featured Projects</h2>
-            <div class="portfolio-grid">
-                <div class="portfolio-card">
-                    <div class="portfolio-image">
-                        <img src="image copy 5.png" alt="Project 1">
-                        <div class="portfolio-overlay">
-                            <a href="https://bhairavi-academy.netlify.app/" class="btn btn-primary small">View
-                                Project</a>
-                        </div>
-                    </div>
-                    <div class="portfolio-content">
-                        <h3>Promotion Website</h3>
-                        <p>We designed a custom promotional website for Bhiravi Academy, a NEET coaching institute,
-                            focused on attracting students and enhancing their online presence.</p>
-                        <div class="tech-tags">
-                            <span class="tech-tag">HTML5</span>
-                            <span class="tech-tag">CSS3</span>
-                            <span class="tech-tag">JavaScript</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="portfolio-card">
-                    <div class="portfolio-image">
-                        <img src="image copy 6.png" alt="Project 2">
-                        <div class="portfolio-overlay">
-                            <a href="https://join-bhairavi.netlify.app/" class="btn btn-primary small">View Project</a>
-                        </div>
-                    </div>
-                    <div class="portfolio-content">
-                        <h3>Registration System</h3>
-                        <p>We built a database-driven registration system for Bhairavi Academy to securely store and
-                            manage student enrollment details.</p>
-                        <div class="tech-tags">
-                            <span class="tech-tag">HTML5</span>
-                            <span class="tech-tag">CSS3</span>
-                            <span class="tech-tag">Firebase</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="portfolio-card">
-                    <div class="portfolio-image">
-                        <img src="image copy 7.png" alt="Project 3">
-                        <div class="portfolio-overlay">
-                            <a href="https://myportfolio-iota-two-77.vercel.app/" class="btn btn-primary small">View
-                                Project</a>
-                        </div>
-                    </div>
-                    <div class="portfolio-content">
-                        <h3>Portfolio Website</h3>
-                        <p>We designed a responsive portfolio website to showcase skills, projects, and achievements in
-                            a clean and professional way.”</p>
-                        <div class="tech-tags">
-                            <span class="tech-tag">HTML5</span>
-                            <span class="tech-tag">CSS3</span>
-                            <span class="tech-tag">JavaScript</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
     <!-- Technologies Section -->
     <section class="technologies">
         <div class="container">
-            <h2 class="section-title">Technologies We Use</h2>
+            <div class="section-header">
+                <span class="section-eyebrow">Our Toolkit</span>
+                <h2 class="section-title">Technologies We Use</h2>
+                <p class="section-subtitle">Modern, proven tools behind every build.</p>
+            </div>
             <div class="tech-grid">
                 <div class="tech-card">
                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5"
@@ -396,7 +426,7 @@
                     <p>Backend-as-a-service platform</p>
                 </div>
                 <div class="tech-card">
-                    <img src="image copy 4.png" alt="GitHub" class="tech-logo-img">
+                    <img src="images/github.png" alt="GitHub" class="tech-logo-img">
                     <h3 style="color: var(--primary-green);">GitHub</h3>
                     <p>Version control and collaboration</p>
                 </div>
@@ -404,49 +434,114 @@
         </div>
     </section>
 
-    <!-- Testimonials Section -->
-    <section class="testimonials">
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio">
         <div class="container">
-            <h2 class="section-title">What Clients Say</h2>
-            <div class="testimonials-carousel">
-                <button class="carousel-btn prev" id="prevTestimonial">❮</button>
-
-                <div class="testimonial-container">
-                    <div class="testimonial-card active">
-                        <div class="testimonial-avatar">
-                            <img src="image.png" alt="Client 1">
+            <div class="section-header">
+                <span class="section-eyebrow">Our Work</span>
+                <h2 class="section-title">Featured Projects</h2>
+                <p class="section-subtitle">Recent websites delivered for real clients.</p>
+            </div>
+            <div class="portfolio-grid">
+                <div class="portfolio-card">
+                    <div class="portfolio-image">
+                        <img src="images/bhairavi.png" alt="Project 1">
+                        <div class="portfolio-overlay">
+                            <a href="#" class="btn btn-primary small">View
+                                Project</a>
                         </div>
-                        <p class="testimonial-text">I’m really happy to share my experience with this talented digital
-                            content creator. He created my academy’s website in a very professional and attractive way. Now our academy looks more
-                            professional and well-organized online. His research, ideas,were
-                            excellent throughout the process.Keep shining and growing with intelligence and creativity.
-                            </p>
-                        <h4 class="testimonial-author">Ms. Parvathy</h4>
-                        <p class="testimonial-role">Owner, Bhairavi Academy</p>
                     </div>
-
-                    <div class="testimonial-card">
-                        <div class="testimonial-avatar">
-                            <img src="image.png" alt="Client 2">
+                    <div class="portfolio-content">
+                        <h3>Promotion Website</h3>
+                        <p>We designed a custom promotional website for Bhiravi Academy, a NEET coaching institute,
+                            focused on attracting students and enhancing their online presence.</p>
+                        <div class="tech-tags">
+                            <span class="tech-tag">HTML5</span>
+                            <span class="tech-tag">CSS3</span>
+                            <span class="tech-tag">JavaScript</span>
                         </div>
-                        <p class="testimonial-text">Honestly, Primus Tech did an amazing job on my portfolio website. The
-                            design is super clean and modern, and it actually represents my work exactly how I wanted it
-                            to. He was really patient with all my requests and brought a lot of great ideas to the table
-                            that made the final result way better than I expected.If you need a solid website, he’s definitely the guy. Massive thanks, man!</p>
-                        <h4 class="testimonial-author">Shane Hicks</h4>
-                        <p class="testimonial-role">Student</p>
                     </div>
-
-
                 </div>
 
-                <button class="carousel-btn next" id="nextTestimonial">❯</button>
-            </div>
+                <div class="portfolio-card">
+                    <div class="portfolio-image">
+                        <img src="images/joinbhairavi.png" alt="Project 2">
+                        <div class="portfolio-overlay">
+                            <a href="#" class="btn btn-primary small">View Project</a>
+                        </div>
+                    </div>
+                    <div class="portfolio-content">
+                        <h3>Registration System</h3>
+                        <p>We built a database-driven registration system for Bhairavi Academy to securely store and
+                            manage student enrollment details.</p>
+                        <div class="tech-tags">
+                            <span class="tech-tag">HTML5</span>
+                            <span class="tech-tag">CSS3</span>
+                            <span class="tech-tag">Firebase</span>
+                        </div>
+                    </div>
+                </div>
 
-            <div class="carousel-dots">
-                <span class="dot active" data-index="0"></span>
-                <span class="dot" data-index="1"></span>
-                <span class="dot" data-index="2"></span>
+                <div class="portfolio-card">
+                    <div class="portfolio-image">
+                        <img src="images/portfolio.png" alt="Project 3">
+                        <div class="portfolio-overlay">
+                            <a href="https://my-personal-portfolio-nine-omega.vercel.app/"
+                                class="btn btn-primary small">View
+                                Project</a>
+                        </div>
+                    </div>
+                    <div class="portfolio-content">
+                        <h3>Portfolio Website</h3>
+                        <p>We designed a responsive portfolio website to showcase skills, projects, and achievements in
+                            a clean and professional way."</p>
+                        <div class="tech-tags">
+                            <span class="tech-tag">HTML5</span>
+                            <span class="tech-tag">CSS3</span>
+                            <span class="tech-tag">JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-card">
+                    <div class="portfolio-image">
+                        <img src="images/rebel.png" alt="Project 4">
+                        <div class="portfolio-overlay">
+                            <a href="https://rebel-star-prabhas.vercel.app/" class="btn btn-primary small">View
+                                Project</a>
+                        </div>
+                    </div>
+                    <div class="portfolio-content">
+                        <h3>Portfolio Website</h3>
+                        <p>We designed a custom portfolio website for Actor Prabhas, as a fan project to showcase his
+                            work and achievements.</p>
+                        <div class="tech-tags">
+                            <span class="tech-tag">HTML5</span>
+                            <span class="tech-tag">CSS3</span>
+                            <span class="tech-tag">JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-card">
+                    <div class="portfolio-image">
+                        <img src="images/lighthouse.png" alt="Project 5">
+                        <div class="portfolio-overlay">
+                            <a href="https://muttom-light-house.vercel.app/" class="btn btn-primary small">View
+                                Project</a>
+                        </div>
+                    </div>
+                    <div class="portfolio-content">
+                        <h3>Historical Tribute</h3>
+                        <p>A custom website designed and developed for the Guardian of the Sea—the iconic Muttom
+                            Lighthouse. </p>
+                        <div class="tech-tags">
+                            <span class="tech-tag">HTML5</span>
+                            <span class="tech-tag">CSS3</span>
+                            <span class="tech-tag">JavaScript</span>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -454,7 +549,11 @@
     <!-- Pricing Section -->
     <section class="pricing">
         <div class="container">
-            <h2 class="section-title">Pricing Plans</h2>
+            <div class="section-header">
+                <span class="section-eyebrow">Simple Pricing</span>
+                <h2 class="section-title">Pricing Plans</h2>
+                <p class="section-subtitle">Transparent one-time pricing. No hidden costs.</p>
+            </div>
             <div class="pricing-grid">
                 <div class="pricing-card">
                     <h3>Starter</h3>
@@ -507,9 +606,13 @@
     </section>
 
     <!-- FAQ Section -->
-    <section id="about" class="faq">
+    <section id="faq" class="faq">
         <div class="container">
-            <h2 class="section-title">Frequently Asked Questions</h2>
+            <div class="section-header">
+                <span class="section-eyebrow">Good To Know</span>
+                <h2 class="section-title">Frequently Asked Questions</h2>
+                <p class="section-subtitle">Answers to the questions we hear most often.</p>
+            </div>
             <div class="faq-container">
                 <div class="faq-item">
                     <button class="faq-question">
@@ -628,6 +731,71 @@
         </div>
     </section>
 
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-eyebrow">Testimonials</span>
+                <h2 class="section-title">What Clients Say</h2>
+                <p class="section-subtitle">Real feedback from the people we've built for.</p>
+            </div>
+            <div class="testimonials-carousel">
+                <button class="carousel-btn prev" id="prevTestimonial" aria-label="Previous testimonial">❮</button>
+
+                <div class="testimonial-container">
+                    <div class="testimonial-card active">
+                        <div class="testimonial-avatar" aria-hidden="true"><span>P</span></div>
+                        <div class="testimonial-stars" aria-label="5 out of 5 stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">"He created my academy's website in a very professional and
+                            attractive way. Now our academy looks more professional and well-organized online. His
+                            research and ideas were excellent throughout the process."</p>
+                        <h4 class="testimonial-author">Ms. Parvathy</h4>
+                        <p class="testimonial-role">Owner, Bhairavi Academy</p>
+                    </div>
+
+                    <div class="testimonial-card">
+                        <div class="testimonial-avatar" aria-hidden="true"><span>T</span></div>
+                        <div class="testimonial-stars" aria-label="5 out of 5 stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">Primus Tech Labs did an outstanding job developing our academy
+                            website.
+                            The design is clean, modern, and easy for students and parents to navigate. We are extremely
+                            happy with the
+                            final result and highly recommend Primus Tech Labs.</p>
+                        <h4 class="testimonial-author">Team</h4>
+                        <p class="testimonial-role">Bhairavi Academy</p>
+                    </div>
+
+                    <div class="testimonial-card">
+                        <div class="testimonial-avatar" aria-hidden="true"><span>M</span></div>
+                        <div class="testimonial-stars" aria-label="5 out of 5 stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">"My portfolio turned out exactly the way I imagined it — sleek,
+                            fast, and easy to share with recruiters. Communication was smooth from start to finish and
+                            every revision was handled quickly. Highly recommended if you want quality work."</p>
+                        <h4 class="testimonial-author">Mr. Mohamed Saheem</h4>
+                        <p class="testimonial-role">Student</p>
+                    </div>
+                </div>
+
+                <button class="carousel-btn next" id="nextTestimonial" aria-label="Next testimonial">❯</button>
+            </div>
+
+            <div class="carousel-dots">
+                <span class="dot active" data-index="0"></span>
+                <span class="dot" data-index="1"></span>
+                <span class="dot" data-index="2"></span>
+            </div>
+        </div>
+    </section>
+
     <!-- CTA Section -->
     <section class="cta-section">
         <div class="container">
@@ -647,8 +815,11 @@
     <!-- Contact Section -->
     <section id="contact" class="contact">
         <div class="container">
-            <h2 class="section-title">Contact Us</h2>
-            <p class="section-subtitle">Have a project in mind? We'd love to hear from you.</p>
+            <div class="section-header">
+                <span class="section-eyebrow">Get In Touch</span>
+                <h2 class="section-title">Contact Us</h2>
+                <p class="section-subtitle">Have a project in mind? We'd love to hear from you.</p>
+            </div>
 
             <div class="contact-layout">
                 <div class="contact-info">
@@ -713,11 +884,11 @@
                     <div class="form-group">
                         <select id="budget" required>
                             <option value="">Select Budget Range</option>
-                            <option value="under-1k">Under ₹5000</option>
-                            <option value="1k-3k">₹5000 - ₹7000</option>
-                            <option value="3k-5k">₹7000 - ₹10000</option>
-                            <option value="5k-10k">₹10000 - ₹15000</option>
-                            <option value="above-10k">Above ₹15000</option>
+                            <option value="Under ₹5000">Under ₹5000</option>
+                            <option value="₹5000 - ₹7000">₹5000 - ₹7000</option>
+                            <option value="₹7000 - ₹10000">₹7000 - ₹10000</option>
+                            <option value="₹10000 - ₹15000">₹10000 - ₹15000</option>
+                            <option value="Above ₹15000">Above ₹15000</option>
                         </select>
                         <span class="error-message" id="budgetError"></span>
                     </div>
@@ -734,12 +905,608 @@
         </div>
     </section>
 
-    <!-- WhatsApp Floating Button -->
+    <!-- Chatbot Button with Font Awesome Icon -->
+    <button id="customChatBtn" class="custom-chat-btn" aria-label="Open or close chat">
+        <i class="fas fa-robot"></i>
+    </button>
+
+    <style>
+        /* Custom Chat Button */
+        .custom-chat-btn {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #7CFF00, #39FF14);
+            color: #050505;
+            border: none;
+            cursor: pointer;
+            font-size: 1.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 0 30px rgba(124, 255, 0, 0.6);
+            transition: all 0.3s ease;
+            z-index: 999;
+        }
+
+        .custom-chat-btn:hover {
+            transform: translateY(-5px) scale(1.1);
+            box-shadow: 0 0 50px rgba(124, 255, 0, 0.8);
+        }
+
+        .custom-chat-btn:active {
+            transform: scale(0.95);
+        }
+
+        /* Hide n8n default toggle */
+        .n8n-chat .chat-window-toggle {
+            display: none !important;
+        }
+
+        /* Close button in header */
+        .n8n-chat-header-close {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 32px;
+            height: 32px;
+            background: transparent;
+            border: none;
+            color: #7CFF00;
+            cursor: pointer;
+            font-size: 1.3rem;
+            border-radius: 6px;
+            transition: all 0.2s ease;
+            margin-left: auto;
+        }
+
+        .n8n-chat-header-close:hover {
+            background: rgba(124, 255, 0, 0.1);
+            color: #fff;
+        }
+    </style>
+
+    <!-- Primus AI Chatbot Widget (n8n) -->
+    <link href="https://cdn.jsdelivr.net/npm/@n8n/chat/dist/style.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
-    <a href="https://wa.me/917639416446" class="whatsapp-button">
-        <i class="fab fa-whatsapp"></i>
-    </a>
+    <style>
+        :root {
+            /* Primary Colors */
+            --chat--color-primary: #7CFF00;
+            --chat--color-primary-shade-50: #6ae600;
+            --chat--color-primary-shade-100: #5ecc00;
+            --chat--color-secondary: #7CFF00;
+            --chat--color-secondary-shade-50: #6ae600;
+
+            /* Dark Theme */
+            --chat--color-white: #f0f0f0;
+            --chat--color-light: #1a1a1a;
+            --chat--color-light-shade-50: #222222;
+            --chat--color-light-shade-100: #2a2a2a;
+            --chat--color-medium: #888888;
+            --chat--color-dark: #7CFF00;
+            --chat--color-disabled: #555555;
+            --chat--color-typing: #7CFF00;
+
+            /* Spacing & Border */
+            --chat--spacing: 1rem;
+            --chat--border-radius: 16px;
+            --chat--transition-duration: 0.2s;
+
+            /* Window Size */
+            --chat--window--width: 380px;
+            --chat--window--height: 580px;
+
+            /* Header */
+            --chat--header-height: auto;
+            --chat--header--padding: 1.25rem 1.4rem;
+            --chat--header--background: linear-gradient(135deg, #0a0f08 0%, #050505 100%);
+            --chat--header--color: #7CFF00;
+            --chat--header--border-bottom: 1px solid rgba(124, 255, 0, 0.4);
+
+            /* Typography */
+            --chat--heading--font-size: 1.1rem;
+            --chat--subtitle--font-size: 0.82rem;
+            --chat--subtitle--line-height: 1.4;
+
+            /* Input */
+            --chat--textarea--height: 50px;
+            --chat--input--background: #1a1a1a;
+            --chat--input--border: 1px solid #7CFF0044;
+            --chat--input--border-active: 1px solid #7CFF00;
+            --chat--input--placeholder--color: #666666;
+            --chat--input--font-size: 0.92rem;
+            --chat--input--color: #f0f0f0;
+            --chat--input--send--button--background: #7CFF00;
+            --chat--input--send--button--color: #050505;
+
+            /* Messages */
+            --chat--message--font-size: 0.92rem;
+            --chat--message--padding: 0.75rem 1rem;
+            --chat--message--border-radius: 12px;
+            --chat--message-line-height: 1.6;
+
+            /* Bot Messages - Dark with green border */
+            --chat--message--bot--background: #0f130d;
+            --chat--message--bot--color: #f0f0f0;
+            --chat--message--bot--border: 1px solid #7CFF0026;
+
+            /* User Messages - Neon green */
+            --chat--message--user--background: #7CFF00;
+            --chat--message--user--color: #050505;
+            --chat--message--user--border: none;
+
+            /* Code blocks */
+            --chat--message--pre--background: #111111;
+
+            /* Toggle Button */
+            --chat--toggle--background: #7CFF00;
+            --chat--toggle--hover--background: #6ae600;
+            --chat--toggle--active--background: #5ecc00;
+            --chat--toggle--color: #050505;
+            --chat--toggle--size: 60px;
+
+            /* Window */
+            --chat--window--background: #050505;
+            --chat--window--border: 1px solid rgba(124, 255, 0, 0.45);
+        }
+
+        /* Chat window dark background */
+        .n8n-chat-window {
+            background: #050505 !important;
+        }
+
+        /* Messages container dark */
+        .n8n-chat-messages {
+            background: #050505 !important;
+        }
+
+        /* Bot message styling */
+        .n8n-chat-message.bot {
+            background: #0a0a0a !important;
+            color: #f0f0f0 !important;
+            border-left: 3px solid #7CFF00 !important;
+        }
+
+        /* User message styling handled by final override */
+
+        /* Input field */
+        .n8n-chat-input {
+            background: #1a1a1a !important;
+            border: 1px solid #7CFF0044 !important;
+            color: #f0f0f0 !important;
+        }
+
+        .n8n-chat-input:focus {
+            border: 1px solid #7CFF00 !important;
+            outline: none;
+        }
+
+        /* Chat window styling */
+        .n8n-chat-window {
+            box-shadow: 0 24px 70px rgba(0, 0, 0, 0.7), 0 0 40px rgba(124, 255, 0, 0.12) !important;
+            border-radius: 16px !important;
+            overflow: hidden;
+        }
+
+        /* Toggle button */
+        .n8n-chat .chat-window-toggle {
+            box-shadow: 0 0 24px rgba(124, 255, 0, 0.55), 0 10px 26px rgba(0, 0, 0, 0.5) !important;
+            transition: transform 0.25s ease, box-shadow 0.25s ease !important;
+        }
+
+        .n8n-chat .chat-window-toggle:hover {
+            transform: translateY(-3px) scale(1.05);
+            box-shadow: 0 0 40px rgba(124, 255, 0, 0.8), 0 14px 30px rgba(0, 0, 0, 0.55) !important;
+        }
+
+        .n8n-chat .chat-heading {
+            font-family: 'Orbitron', sans-serif !important;
+            letter-spacing: 0.5px;
+        }
+
+        /* ===== FORCE LIGHT TEXT EVERYWHERE IN CHAT (fixes black/invisible text) ===== */
+        #n8n-chat,
+        #n8n-chat *,
+        [class*="chat-layout"],
+        [class*="chat-layout"] *,
+        [class*="chat-body"],
+        [class*="chat-body"] *,
+        [class*="chat-message"],
+        [class*="chat-messages-list"] {
+            color: #f0f0f0 !important;
+        }
+
+        /* Bot message bubble: dark bg, light text */
+        [class*="chat-message-from-bot"],
+        [class*="chat-message-from-bot"] * {
+            background-color: #0f130d !important;
+            color: #f0f0f0 !important;
+        }
+
+        /* User message bubble handled by final override below */
+
+        /* Links inside messages */
+        [class*="chat-message"] a {
+            color: #7CFF00 !important;
+            text-decoration: underline;
+        }
+
+        /* Input textarea: light text on dark */
+        #n8n-chat textarea,
+        #n8n-chat input,
+        [class*="chat-input"] textarea,
+        [class*="chat-inputs"] textarea {
+            color: #f0f0f0 !important;
+            background: #1a1a1a !important;
+            -webkit-text-fill-color: #f0f0f0 !important;
+        }
+
+        [class*="chat-input"] textarea::placeholder,
+        [class*="chat-inputs"] textarea::placeholder {
+            color: #777 !important;
+            -webkit-text-fill-color: #777 !important;
+        }
+
+        /* Header title/subtitle green + light */
+        [class*="chat-header"] h1,
+        [class*="chat-header"] [class*="title"] {
+            color: #7CFF00 !important;
+        }
+
+        [class*="chat-header"] p,
+        [class*="chat-header"] [class*="subtitle"] {
+            color: #b8c4b0 !important;
+        }
+
+        /* Get Started / welcome screen text */
+        [class*="chat-welcome"],
+        [class*="chat-welcome"] * {
+            color: #f0f0f0 !important;
+        }
+
+        /* ========== PREMIUM AI BOT POLISH ========== */
+
+        /* Kill the ugly white bar behind the input footer */
+        [class*="chat-footer"],
+        [class*="chat-input"],
+        [class*="chat-inputs"] {
+            background: #0a0d08 !important;
+            border-top: 1px solid rgba(124, 255, 0, 0.15) !important;
+            padding: 12px 14px !important;
+        }
+
+        /* Textarea: rounded pill, dark, contained */
+        [class*="chat-input"] textarea,
+        [class*="chat-inputs"] textarea {
+            background: #14180f !important;
+            border: 1px solid rgba(124, 255, 0, 0.25) !important;
+            border-radius: 12px !important;
+            padding: 12px 14px !important;
+            color: #f0f0f0 !important;
+            -webkit-text-fill-color: #f0f0f0 !important;
+            resize: none !important;
+            box-shadow: none !important;
+        }
+
+        [class*="chat-input"] textarea:focus,
+        [class*="chat-inputs"] textarea:focus {
+            border-color: rgba(124, 255, 0, 0.6) !important;
+            outline: none !important;
+            box-shadow: 0 0 0 3px rgba(124, 255, 0, 0.1) !important;
+        }
+
+        /* Send button: compact, theme-matched, subtle */
+        [class*="chat-input-send-button"],
+        [class*="chat-inputs"] button,
+        [class*="chat-input"] button {
+            background: rgba(124, 255, 0, 0.12) !important;
+            color: #7CFF00 !important;
+            border: 1px solid rgba(124, 255, 0, 0.4) !important;
+            border-radius: 10px !important;
+            width: 40px !important;
+            height: 40px !important;
+            min-width: 40px !important;
+            max-width: 40px !important;
+            display: flex !important;
+            align-items: center !important;
+            justify-content: center !important;
+            cursor: pointer !important;
+            box-shadow: none !important;
+            transition: all 0.2s ease !important;
+            margin: 0 !important;
+            flex-shrink: 0 !important;
+        }
+
+        [class*="chat-input-send-button"]:hover,
+        [class*="chat-inputs"] button:hover,
+        [class*="chat-input"] button:hover {
+            background: linear-gradient(135deg, #7CFF00, #39FF14) !important;
+            border-color: transparent !important;
+            transform: translateY(-1px) !important;
+            box-shadow: 0 0 18px rgba(124, 255, 0, 0.5) !important;
+        }
+
+        [class*="chat-input-send-button"] svg,
+        [class*="chat-inputs"] button svg,
+        [class*="chat-input"] button svg {
+            fill: #7CFF00 !important;
+            color: #7CFF00 !important;
+            width: 18px !important;
+            height: 18px !important;
+            transition: fill 0.2s ease !important;
+        }
+
+        [class*="chat-input-send-button"]:hover svg,
+        [class*="chat-inputs"] button:hover svg,
+        [class*="chat-input"] button:hover svg {
+            fill: #050505 !important;
+            color: #050505 !important;
+        }
+
+        /* Footer as flex row so input + button align nicely */
+        [class*="chat-footer"],
+        [class*="chat-inputs"] {
+            display: flex !important;
+            align-items: center !important;
+            gap: 10px !important;
+        }
+
+        [class*="chat-input"] textarea,
+        [class*="chat-inputs"] textarea {
+            flex: 1 !important;
+        }
+
+        /* Header: proper spacing, close button positioning */
+        [class*="chat-header"] {
+            position: relative !important;
+            padding: 1.1rem 1.3rem !important;
+            display: flex !important;
+            flex-direction: column !important;
+            align-items: flex-start !important;
+            gap: 4px !important;
+        }
+
+        /* Move our injected X close button to top-right corner */
+        .n8n-chat-header-close {
+            position: absolute !important;
+            top: 14px !important;
+            right: 14px !important;
+            margin: 0 !important;
+            width: 34px !important;
+            height: 34px !important;
+            border-radius: 8px !important;
+            font-size: 1.7rem !important;
+            line-height: 1 !important;
+            font-family: Arial, sans-serif !important;
+            font-weight: 400 !important;
+            padding: 0 !important;
+            z-index: 10 !important;
+        }
+
+        /* Title styling - FORCE GREEN */
+        [class*="chat-header"] h1,
+        [class*="chat-heading"],
+        [class*="chat-header"] [class*="title"],
+        [class*="chat-header"]>*:first-child {
+            font-family: 'Orbitron', sans-serif !important;
+            font-size: 1.15rem !important;
+            font-weight: 700 !important;
+            margin: 0 !important;
+            color: #7CFF00 !important;
+            text-shadow: 0 0 12px rgba(124, 255, 0, 0.4) !important;
+        }
+
+        [class*="chat-header"] p,
+        [class*="chat-subtitle"],
+        [class*="chat-header"] [class*="subtitle"] {
+            font-size: 0.8rem !important;
+            margin: 0 !important;
+            color: #9aa88f !important;
+            font-family: 'Inter', sans-serif !important;
+        }
+
+        /* Message bubbles: softer, rounded, spaced */
+        [class*="chat-message"] {
+            border-radius: 14px !important;
+            padding: 12px 15px !important;
+            margin: 6px 0 !important;
+            line-height: 1.6 !important;
+            max-width: 85% !important;
+        }
+
+        [class*="chat-message-from-bot"] {
+            border: 1px solid rgba(124, 255, 0, 0.2) !important;
+            border-bottom-left-radius: 4px !important;
+        }
+
+        [class*="chat-message-from-user"] {
+            border-bottom-right-radius: 4px !important;
+        }
+
+        /* Messages area padding */
+        [class*="chat-body"],
+        [class*="chat-messages-list"] {
+            padding: 16px !important;
+        }
+
+        /* Scrollbar styling */
+        [class*="chat-body"]::-webkit-scrollbar,
+        [class*="chat-messages-list"]::-webkit-scrollbar {
+            width: 6px;
+        }
+
+        [class*="chat-body"]::-webkit-scrollbar-thumb,
+        [class*="chat-messages-list"]::-webkit-scrollbar-thumb {
+            background: rgba(124, 255, 0, 0.3);
+            border-radius: 3px;
+        }
+
+        [class*="chat-body"]::-webkit-scrollbar-track,
+        [class*="chat-messages-list"]::-webkit-scrollbar-track {
+            background: transparent;
+        }
+
+        /* ========== AI THINKING ANIMATION (subtle, normal) ========== */
+        [class*="chat-message-typing"] {
+            background: transparent !important;
+            border: none !important;
+            box-shadow: none !important;
+            padding: 10px 4px !important;
+            display: inline-flex !important;
+            align-items: center !important;
+            gap: 4px !important;
+            max-width: 60px !important;
+        }
+
+        /* The three dots: soft gray, gentle pulse */
+        [class*="chat-message-typing-circle"],
+        [class*="typing"] [class*="circle"],
+        [class*="chat-message-typing"] span {
+            width: 7px !important;
+            height: 7px !important;
+            border-radius: 50% !important;
+            background: #8a9383 !important;
+            display: inline-block !important;
+            animation: primusThinking 1.3s ease-in-out infinite !important;
+            box-shadow: none !important;
+        }
+
+        [class*="chat-message-typing-circle"]:nth-child(2),
+        [class*="chat-message-typing"] span:nth-child(2) {
+            animation-delay: 0.18s !important;
+        }
+
+        [class*="chat-message-typing-circle"]:nth-child(3),
+        [class*="chat-message-typing"] span:nth-child(3) {
+            animation-delay: 0.36s !important;
+        }
+
+        @keyframes primusThinking {
+
+            0%,
+            60%,
+            100% {
+                transform: translateY(0);
+                opacity: 0.35;
+            }
+
+            30% {
+                transform: translateY(-4px);
+                opacity: 0.9;
+            }
+        }
+
+        /* ===== FINAL OVERRIDE: user messages = clean dark bubble, subtle green accent ===== */
+        html body [class*="chat-message-from-user"],
+        html body [class*="chat-message-from-user"] *,
+        html body [class*="chat-message"][class*="user"],
+        html body [class*="chat-message"][class*="user"] * {
+            color: #f0f0f0 !important;
+            -webkit-text-fill-color: #f0f0f0 !important;
+            font-weight: 400 !important;
+        }
+
+        /* User bubble: dark neutral with a thin green edge — premium, not loud */
+        html body [class*="chat-message-from-user"] {
+            background: #1c221a !important;
+            border: 1px solid rgba(124, 255, 0, 0.35) !important;
+            box-shadow: none !important;
+            padding: 12px 16px !important;
+            width: fit-content !important;
+            max-width: 80% !important;
+            margin-left: auto !important;
+            border-bottom-right-radius: 4px !important;
+        }
+    </style>
+
+    <script type="module">
+        import { createChat } from 'https://cdn.jsdelivr.net/npm/@n8n/chat/dist/chat.bundle.es.js';
+
+        createChat({
+            webhookUrl: 'https://primustechlabs.app.n8n.cloud/webhook/b28ac696-e085-4573-ba71-b87090b38ee6/chat',
+            mode: 'window',
+            showWelcomeScreen: true,
+            defaultLanguage: 'en',
+            initialMessages: [
+                'Hi! I\'m Primus AI 👋',
+                'How can I help you today? Whether you need a business website, portfolio, or landing page — I\'m here to help!'
+            ],
+            i18n: {
+                en: {
+                    title: 'Primus AI',
+                    subtitle: 'Your Web Development Assistant',
+                    footer: '',
+                    getStarted: 'Start Chat',
+                    inputPlaceholder: 'Ask me anything...',
+                    closeButtonTooltip: 'Close chat',
+                }
+            }
+        });
+
+        // Style the chat header: green title + add close (X) button
+        function polishChatHeader() {
+            const header = document.querySelector('[class*="chat-header"]');
+            if (!header) return false;
+
+            // Force the title to green — find ANY element whose text is "Primus AI"
+            header.querySelectorAll('*').forEach(el => {
+                const txt = (el.textContent || '').trim();
+                if (txt === 'Primus AI' && el.children.length === 0) {
+                    el.style.setProperty('color', '#7CFF00', 'important');
+                    el.style.setProperty('text-shadow', '0 0 14px rgba(124,255,0,0.5)', 'important');
+                    el.style.setProperty('font-family', "'Orbitron', sans-serif", 'important');
+                    el.style.setProperty('-webkit-text-fill-color', '#7CFF00', 'important');
+                }
+            });
+            // Also try the header's first direct text-bearing child
+            const firstEl = header.firstElementChild;
+            if (firstEl && (firstEl.textContent || '').includes('Primus AI')) {
+                firstEl.style.setProperty('color', '#7CFF00', 'important');
+                firstEl.style.setProperty('-webkit-text-fill-color', '#7CFF00', 'important');
+            }
+
+            // Add close button if not already there
+            if (!header.querySelector('.n8n-chat-header-close')) {
+                const closeBtn = document.createElement('button');
+                closeBtn.className = 'n8n-chat-header-close';
+                closeBtn.innerHTML = '&times;';
+                closeBtn.title = 'Close chat';
+                closeBtn.setAttribute('aria-label', 'Close chat');
+                closeBtn.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    const toggle = document.querySelector('[class*="chat-window-toggle"]');
+                    if (toggle) toggle.click();
+                });
+                header.appendChild(closeBtn);
+            }
+            return true;
+        }
+
+        // Try repeatedly until the chat header exists, then keep watching
+        let tries = 0;
+        const headerInterval = setInterval(() => {
+            tries++;
+            if (polishChatHeader() || tries > 40) clearInterval(headerInterval);
+        }, 250);
+
+        // Re-apply green title whenever the chat re-renders (open/close)
+        const bodyObserver = new MutationObserver(() => polishChatHeader());
+        bodyObserver.observe(document.body, { childList: true, subtree: true });
+
+        // Toggle chat on button click
+        const customChatBtn = document.getElementById('customChatBtn');
+        customChatBtn.addEventListener('click', () => {
+            const toggle = document.querySelector('[class*="chat-window-toggle"]');
+            if (toggle) toggle.click();
+        });
+    </script>
+
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
@@ -748,9 +1515,10 @@
                     <h4>Quick Links</h4>
                     <ul>
                         <li><a href="#home" class="scroll-link">Home</a></li>
+                        <li><a href="#about" class="scroll-link">About</a></li>
                         <li><a href="#services" class="scroll-link">Services</a></li>
                         <li><a href="#portfolio" class="scroll-link">Portfolio</a></li>
-                        <li><a href="#about" class="scroll-link">About</a></li>
+
                     </ul>
                 </div>
 
@@ -781,8 +1549,8 @@
                 <div class="footer-section">
                     <h4>Legal</h4>
                     <ul>
-                        <li><a href="#">Privacy Policy</a></li>
-                        <li><a href="#">Terms & Conditions</a></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li><a href="terms.html">Terms &amp; Conditions</a></li>
 
                     </ul>
                 </div>

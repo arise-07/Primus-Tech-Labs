@@ -6,17 +6,19 @@ const ctx = canvas.getContext('2d');
 canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
 
+const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
 const particles = [];
-const particleCount = 50;
+const particleCount = prefersReducedMotion ? 0 : 22;
 
 class Particle {
     constructor(x, y) {
         this.x = x;
         this.y = y;
-        this.size = Math.random() * 3 + 1;
-        this.speedX = (Math.random() - 0.5) * 2;
-        this.speedY = (Math.random() - 0.5) * 2;
-        this.opacity = Math.random() * 0.5 + 0.2;
+        this.size = Math.random() * 2 + 0.8;
+        this.speedX = (Math.random() - 0.5) * 0.6;
+        this.speedY = (Math.random() - 0.5) * 0.6;
+        this.opacity = Math.random() * 0.35 + 0.15;
         this.color = Math.random() > 0.5 ? '#7CFF00' : '#39FF14';
     }
 
@@ -75,8 +77,55 @@ window.addEventListener('resize', () => {
     canvas.height = window.innerHeight;
 });
 
-initParticles();
-animateParticles();
+if (!prefersReducedMotion) {
+    initParticles();
+    animateParticles();
+}
+
+// ==================== HERO MOUSE PARALLAX ====================
+
+const heroSection = document.querySelector('.hero');
+const heroVisual = document.querySelector('.hero-visual');
+
+if (heroSection && heroVisual && !prefersReducedMotion && window.matchMedia('(pointer: fine)').matches) {
+    // The entrance animation's fill-mode would override inline transforms,
+    // so drop it once it finishes.
+    heroVisual.addEventListener('animationend', () => {
+        heroVisual.style.animation = 'none';
+    }, { once: true });
+
+    let targetX = 0, targetY = 0, currentX = 0, currentY = 0;
+    let parallaxRunning = false;
+
+    heroSection.addEventListener('mousemove', (e) => {
+        const rect = heroSection.getBoundingClientRect();
+        targetX = ((e.clientX - rect.left) / rect.width - 0.5) * 14;
+        targetY = ((e.clientY - rect.top) / rect.height - 0.5) * 10;
+
+        if (!parallaxRunning) {
+            parallaxRunning = true;
+            requestAnimationFrame(updateParallax);
+        }
+    });
+
+    heroSection.addEventListener('mouseleave', () => {
+        targetX = 0;
+        targetY = 0;
+    });
+
+    function updateParallax() {
+        currentX += (targetX - currentX) * 0.06;
+        currentY += (targetY - currentY) * 0.06;
+        heroVisual.style.transform = `translate(${currentX.toFixed(2)}px, ${currentY.toFixed(2)}px)`;
+
+        if (Math.abs(targetX - currentX) < 0.05 && Math.abs(targetY - currentY) < 0.05 && targetX === 0 && targetY === 0) {
+            heroVisual.style.transform = '';
+            parallaxRunning = false;
+        } else {
+            requestAnimationFrame(updateParallax);
+        }
+    }
+}
 
 // ==================== HAMBURGER MENU ====================
 
@@ -639,7 +688,7 @@ document.getElementById("contactForm").addEventListener("submit", function (e) {
     const budget = document.getElementById("budget").value;
     const message = document.getElementById("message").value;
 
-    // Your WhatsApp number (with country code for India)
+   
     const whatsappNumber = "917639416446";
 
     // Create WhatsApp message
