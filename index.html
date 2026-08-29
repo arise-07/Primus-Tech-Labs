@@ -713,7 +713,7 @@
         </div>
     </section>
 
-    <!-- Chat button (currently inert -- wire up a handler if/when needed) -->
+    <!-- Chat button -->
     <button id="customChatBtn" class="custom-chat-btn" aria-label="Open chat">
         <i class="fas fa-robot"></i>
     </button>
@@ -779,6 +779,37 @@
     </footer>
 
     <script src="script.js"></script>
+
+    <!-- Primus AI Chat Widget -->
+    <iframe id="primusChatFrame" src="https://primus-chatbot.vercel.app/" title="Primus Chat"
+        style="position:fixed; bottom:20px; right:20px; width:0; height:0; border:none; z-index:2147483000; pointer-events:none;"
+        allow="clipboard-write"></iframe>
+
+    <script>
+        (function () {
+            var frame = document.getElementById("primusChatFrame");
+            var CHAT_ORIGIN = "https://primus-chatbot.vercel.app";
+
+            document.getElementById("customChatBtn").addEventListener("click", function () {
+                frame.contentWindow.postMessage({ type: "primus-chat-toggle" }, CHAT_ORIGIN);
+            });
+
+            window.addEventListener("message", function (event) {
+                if (event.origin !== CHAT_ORIGIN) return;
+                if (event.data && event.data.type === "primus-chat-state") {
+                    if (event.data.isOpen) {
+                        frame.style.width = "370px";
+                        frame.style.height = "520px";
+                        frame.style.pointerEvents = "auto";
+                    } else {
+                        frame.style.width = "0px";
+                        frame.style.height = "0px";
+                        frame.style.pointerEvents = "none";
+                    }
+                }
+            });
+        })();
+    </script>
 </body>
 
 </html>
